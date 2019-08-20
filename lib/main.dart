@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bedtime Routine',
+      title: 'Nightly',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.amber,
       ),
-      home: MyHomePage(title: 'Bedtime Routine'),
+      home: MyHomePage(title: 'Nightly'),
     );
   }
 }
@@ -51,9 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   var _activity = [
     'BEGIN',
-    'Pee/Poo',
+    'Toilet',
     'Wash',
-    'Brush/Floss',
+    'Dental',
     'Dry',
     'Pajamas',
     'Arrange Bed',
@@ -111,13 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              _activity[_counter],
-            ),
-            Text(
-              'Elapsed time in seconds:',
-            ),
-            Text(
-              '$_elapsedSeconds',
+              'Time (s): $_elapsedSeconds',
               style: Theme.of(context).textTheme.display1,
             ),
           ],
@@ -126,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: RaisedButton(
         onPressed: _incrementCounter,
         child: Text(
-          'Done with activity',
+          _activity[_counter],
           style: Theme.of(context).textTheme.display1,
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.

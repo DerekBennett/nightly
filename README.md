@@ -1,16 +1,13 @@
-# dereks_first_flutter
+# Nightly
 
-A new Flutter application.
+Nightly helps parents and children keep track of progress through bedtime rituals. The goal is a
+smooth, stress-free, repeatable bedtime routine.
 
-## Getting Started
+This application is a persistent variant of a stopwatch, combined with a checklist.
 
-This project is a starting point for a Flutter application.
+## Flutter
 
-A few resources to get you started if this is your first Flutter project:
-
+This project is written using the Flutter application framework. Here are some Flutter resources:
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [online documentation](https://flutter.dev/docs)
