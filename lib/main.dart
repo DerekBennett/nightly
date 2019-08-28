@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String updateStatusString(Stopwatch _s) {
     int _secondsThisMinute = _s.elapsed.inSeconds % Duration.secondsPerMinute;
-    return 'Time Taken:\t${_s.elapsed.inMinutes}\' ${_secondsThisMinute}\"';
+    return 'Time Taken: ${_s.elapsed.inMinutes}\' ${_secondsThisMinute}\"';
   }
 
   void _displayElapsedSeconds(Timer timer) {
@@ -121,6 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: Theme.of(context).textTheme.display3,
               ),
             ),
+            Spacer(),
             AnimatedList(
               key: _completedTasksKey,
               itemBuilder: completedTasksItemBuilder,
